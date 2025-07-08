@@ -1,0 +1,100 @@
+# Cargar valores de la matriz 4x4 en registros:
+$t0 ← 1     $t1 ← 2     $t2 ← 3     $t3 ← 4
+$t4 ← 5     $t5 ← 6     $t6 ← 7     $t7 ← 8
+$t8 ← 9     $t9 ← 1     $s0 ← 2     $s1 ← 3
+$s2 ← 4     $s3 ← 5     $s4 ← 6     $s5 ← 7
+
+# Mínimos y máximos por fila:
+
+# Fila 0: $t0, $t1, $t2, $t3
+$s6 ← $t0          # max
+if ($t1 > $s6) → $s6 ← $t1
+if ($t2 > $s6) → $s6 ← $t2
+if ($t3 > $s6) → $s6 ← $t3
+
+$s7 ← $t0          # min
+if ($t1 < $s7) → $s7 ← $t1
+if ($t2 < $s7) → $s7 ← $t2
+if ($t3 < $s7) → $s7 ← $t3
+
+# Fila 1: $t4, $t5, $t6, $t7
+$a1 ← $t4          # max
+if ($t5 > $a1) → $a1 ← $t5
+if ($t6 > $a1) → $a1 ← $t6
+if ($t7 > $a1) → $a1 ← $t7
+
+$a3 ← $t4          # min
+if ($t5 < $a3) → $a3 ← $t5
+if ($t6 < $a3) → $a3 ← $t6
+if ($t7 < $a3) → $a3 ← $t7
+
+# Fila 2: $t8, $t9, $s0, $s1
+$v1 ← $t8          # max
+if ($t9 > $v1) → $v1 ← $t9
+if ($s0 > $v1) → $v1 ← $s0
+if ($s1 > $v1) → $v1 ← $s1
+
+$k1 ← $t8          # min
+if ($t9 < $k1) → $k1 ← $t9
+if ($s0 < $k1) → $k1 ← $s0
+if ($s1 < $k1) → $k1 ← $s1
+
+# Fila 3: $s2, $s3, $s4, $s5
+$s6 ← $s2          # max (sobrescribe max fila 0)
+if ($s3 > $s6) → $s6 ← $s3
+if ($s4 > $s6) → $s6 ← $s4
+if ($s5 > $s6) → $s6 ← $s5
+
+$s7 ← $s2          # min (sobrescribe min fila 0)
+if ($s3 < $s7) → $s7 ← $s3
+if ($s4 < $s7) → $s7 ← $s4
+if ($s5 < $s7) → $s7 ← $s5
+
+# Mínimos y máximos por columna:
+
+# Columna 0: $t0, $t4, $t8, $s2
+$s6 ← $t0
+if ($t4 > $s6) → $s6 ← $t4
+if ($t8 > $s6) → $s6 ← $t8
+if ($s2 > $s6) → $s6 ← $s2
+
+$s7 ← $t0
+if ($t4 < $s7) → $s7 ← $t4
+if ($t8 < $s7) → $s7 ← $t8
+if ($s2 < $s7) → $s7 ← $s2
+
+# Columna 1: $t1, $t5, $t9, $s3
+$a1 ← $t1
+if ($t5 > $a1) → $a1 ← $t5
+if ($t9 > $a1) → $a1 ← $t9
+if ($s3 > $a1) → $a1 ← $s3
+
+$a3 ← $t1
+if ($t5 < $a3) → $a3 ← $t5
+if ($t9 < $a3) → $a3 ← $t9
+if ($s3 < $a3) → $a3 ← $s3
+
+# Columna 2: $t2, $t6, $s0, $s4
+$v1 ← $t2
+if ($t6 > $v1) → $v1 ← $t6
+if ($s0 > $v1) → $v1 ← $s0
+if ($s4 > $v1) → $v1 ← $s4
+
+$k1 ← $t2
+if ($t6 < $k1) → $k1 ← $t6
+if ($s0 < $k1) → $k1 ← $s0
+if ($s4 < $k1) → $k1 ← $s4
+
+# Columna 3: $t3, $t7, $s1, $s5
+$s6 ← $t3
+if ($t7 > $s6) → $s6 ← $t7
+if ($s1 > $s6) → $s6 ← $s1
+if ($s5 > $s6) → $s6 ← $s5
+
+$s7 ← $t3
+if ($t7 < $s7) → $s7 ← $t7
+if ($s1 < $s7) → $s7 ← $s1
+if ($s5 < $s7) → $s7 ← $s5
+
+# Finalizar el programa:
+terminar ejecución (syscall 10)
