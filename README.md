@@ -48,6 +48,9 @@ Para efectos practicos del laboratorio, se cargarán los datos de la matriz dire
 - [@dipper319-dev](https://github.com/dipper319-dev)
 
 Universidad de Antioquia  
+
 Arquitectura de Computadores y Laboratorio  
+
 Fredy Alexander Rivera Vélez
+
 Semestre 2025-1
