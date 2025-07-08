@@ -21,12 +21,11 @@ Este enfoque permite visualizar el flujo de datos directamente en el banco de re
 
 ## 📚 Archivos del repositorio
 
-| Archivo | Descripción |
-|--------|-------------|
-| `Informe de laboratorio No3.pdf` | Informe completo con explicaciones técnicas |
-| `codigoMIPS.asm` | Código ensamblador del programa |
-| `pseudocodigo.txt` | Lógica del algoritmo en pseudocódigo |
-| `codigoMaquina.txt` | Instrucciones MIPS en formato hexadecimal |
+- `Informe de laboratorio No3.pdf`: Informe completo con explicaciones técnicas.
+- `procesadorMonociclo.circ`: Archivo del procesador construido en Logisim Evolution.
+- `codigoMIPS.asm`: Código ensamblador del programa.
+- `pseudocodigo.txt`: Lógica del algoritmo en pseudocódigo.
+- `codigoMaquina.txt`: Instrucciones MIPS en formato hexadecimal.
 
 ---
 
