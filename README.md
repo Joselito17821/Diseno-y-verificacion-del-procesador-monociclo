@@ -46,6 +46,7 @@ Para efectos practicos del laboratorio, se cargarán los datos de la matriz dire
 
 - [@Joselito17821](https://github.com/Joselito17821)
 - [@dipper319-dev](https://github.com/dipper319-dev)
+  
 
 Universidad de Antioquia  
 
