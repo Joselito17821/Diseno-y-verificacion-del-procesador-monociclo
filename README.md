@@ -38,7 +38,7 @@ Para efectos practicos del laboratorio, se cargarán los datos de la matriz dire
 ## 📚 Requisitos técnicos
 
 - [Logisim Evolution](https://github.com/logisim-evolution/logisim-evolution) (para el procesador)
-- [MARS IDE](http://courses.missouristate.edu/KenVollmar/MARS/) (para código MIPS)
+- [MARS IDE](https://computerscience.missouristate.edu/mars-mips-simulator.htm) (para código MIPS)
 
 ---
 
