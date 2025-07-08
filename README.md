@@ -31,7 +31,7 @@ Este enfoque permite visualizar el flujo de datos directamente en el banco de re
 
 ## 🧠 Nota
 
-Para efectos del laboratorio, se cargarán los datos de la matriz directamente en la memoria de instrucciones (ROM) para evitar usar la memoria de datos. Esto facilita la depuración y permite visualizar resultados directamente en los registros.
+Para efectos practicos del laboratorio, se cargarán los datos de la matriz directamente en la memoria de instrucciones (ROM) para evitar usar la memoria de datos. Esto facilita la depuración y permite visualizar resultados directamente en los registros.
 
 ---
 
